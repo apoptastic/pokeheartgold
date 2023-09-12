@@ -46,7 +46,7 @@
 
 static void sub_02051660(FieldSystem *fieldSystem, BattleSetup *setup);
 
-static BOOL sub_02050660(TaskManager *man) {
+static BOOL Task_LaunchBattle(TaskManager *man) {
     FieldSystem *fieldSystem = TaskManager_GetFieldSystem(man);
     BattleSetup *battleSetup = TaskManager_GetEnv(man);
     int *state = TaskManager_GetStatePtr(man);
@@ -67,7 +67,7 @@ static BOOL sub_02050660(TaskManager *man) {
 }
 
 static void sub_020506AC(TaskManager *man, BattleSetup *setup) {
-    TaskManager_Call(man, sub_02050660, setup);
+    TaskManager_Call(man, Task_LaunchBattle, setup);
 }
 
 static ENCOUNTER *Encounter_New(BattleSetup *setup, int effect, int bgm, u32 *flag) {
