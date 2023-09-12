@@ -198,8 +198,8 @@ sub_0203E3C0: ; 0x0203E3C0
 	bx lr
 	thumb_func_end sub_0203E3C0
 
-	thumb_func_start sub_0203E3C4
-sub_0203E3C4: ; 0x0203E3C4
+	thumb_func_start BattleLauncher
+BattleLauncher: ; 0x0203E3C4
 	ldr r3, _0203E3CC ; =FieldSystem_LaunchApplication
 	add r2, r1, #0
 	ldr r1, _0203E3D0 ; =_020FA484
@@ -207,7 +207,7 @@ sub_0203E3C4: ; 0x0203E3C4
 	.balign 4, 0
 _0203E3CC: .word FieldSystem_LaunchApplication
 _0203E3D0: .word _020FA484
-	thumb_func_end sub_0203E3C4
+	thumb_func_end BattleLauncher
 
 	thumb_func_start sub_0203E3D4
 sub_0203E3D4: ; 0x0203E3D4
