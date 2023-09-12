@@ -53,7 +53,7 @@ static BOOL Task_LaunchBattle(TaskManager *man) {
 
     switch (*state) {
     case 0:
-        sub_0203E3C4(fieldSystem, battleSetup);
+        BattleLauncher(fieldSystem, battleSetup);
         sub_0203E354();
         (*state)++;
         break;
