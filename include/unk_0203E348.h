@@ -169,7 +169,7 @@ void LaunchHOFCongratsApp(FieldSystem *fieldSystem, HOFCongratsAppArgs *args);
 void LaunchCreditsApp(FieldSystem *fieldSystem, CreditsAppArgs *args);
 void LocationData_BackUp(Location *data);
 void LocationData_Restore(Location *data);
-void sub_0203E3C4(FieldSystem *fieldSystem, BattleSetup *battleSetup);
+void BattleLauncher(FieldSystem *fieldSystem, BattleSetup *battleSetup);
 u32 *LaunchVoltorbFlipApp(FieldSystem *fieldSystem, u32 luck);
 
 #endif //POKEHEARTGOLD_UNK_0203E348_H
