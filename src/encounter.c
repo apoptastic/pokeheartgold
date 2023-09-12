@@ -180,7 +180,7 @@ static void sub_0205087C(int a0, FieldSystem *fieldSystem) {
     }
 }
 
-static BOOL sub_020508B8(TaskManager *man) {
+static BOOL Task_UnionRoomBattle(TaskManager *man) {
     FieldSystem *fieldSystem = TaskManager_GetFieldSystem(man);
     ENCOUNTER *encounter = TaskManager_GetEnv(man);
     int *state = TaskManager_GetStatePtr(man);
@@ -214,7 +214,7 @@ static BOOL sub_020508B8(TaskManager *man) {
     return FALSE;
 }
 
-static BOOL sub_02050960(TaskManager *man) {
+static BOOL Task_WifiBattle(TaskManager *man) {
     FieldSystem *fieldSystem = TaskManager_GetFieldSystem(man);
     ENCOUNTER *encounter = TaskManager_GetEnv(man);
     int *state = TaskManager_GetStatePtr(man);
