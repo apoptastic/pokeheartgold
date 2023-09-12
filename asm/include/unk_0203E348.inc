@@ -65,7 +65,7 @@
 .public LocationData_BackUp
 .public LocationData_Restore
 .public Save_CurrentLocation_BackUp
-.public sub_0203E3C4
+.public BattleLauncher
 .public sub_0203E3D4
 .public sub_0203E3FC
 .public sub_0203E460
