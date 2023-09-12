@@ -241,7 +241,7 @@ static BOOL Task_WifiBattle(TaskManager *man) {
     return FALSE;
 }
 
-static BOOL sub_020509F0(TaskManager *man) {
+static BOOL Task_BFBattle(TaskManager *man) {
     FieldSystem *fieldSystem = TaskManager_GetFieldSystem(man);
     ENCOUNTER *encounter = TaskManager_GetEnv(man);
     int *state = TaskManager_GetStatePtr(man);
@@ -284,7 +284,7 @@ static BOOL sub_020509F0(TaskManager *man) {
 
 void sub_02050AAC(TaskManager *man, BattleSetup *setup, int effect, int bgm, u32 *winFlag) {
     ENCOUNTER *encounter = Encounter_New(setup, effect, bgm, winFlag);
-    TaskManager_Call(man, sub_020509F0, encounter);
+    TaskManager_Call(man, Task_BFBattle, encounter);
 }
 
 static WILD_ENCOUNTER *WildEncounter_New(BattleSetup *setup, int effect, int bgm, int *winFlag) {
